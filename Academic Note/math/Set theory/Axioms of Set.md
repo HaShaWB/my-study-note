@@ -1,3 +1,4 @@
+## Axioms
 ### Set is Object
 모든 [[Set|set]]은 그 자체로 object이다
 ### Axiom of Extensionality (Equality of Sets)
@@ -21,3 +22,23 @@ $$
 ### Axiom of Union
 임의의 두 sets $A$와 $B$에 대해, 두 sets의 union이 존재한다
 $$ \exists (A\cup B) := \{x: x\in A \; \lor \; x \in b\} $$
+### Axiom of Replacement
+하나의 set $X$의 모든 element $x$에 대하여, $y= φ (x)$가 유일하게 존재한다면, $y$를 elements고 갖는 set이 존재한다
+$$
+\forall x \in X, \exists!y=φ(x) \Longleftrightarrow \exists Y = {y: φ(s)}
+$$
+
+### Axiom of Infinity
+Elements가 natural number라고 불리는 Infinite set이 존재한다.
+$$ \exists \mathbb{N} $$
+
+## Lemmas
+- **Finite Choice**: Empty set이 아닌 set $A$에 대하여, $x \in A$를 만족하는 object $x$가 존재한다
+- $\{a, b\} = \{a\} \cup \{b\}$
+- **Partial Order of (proper) subset**: for sets $A, B, C$
+  $$ \begin{align} 
+  A \subseteq B \; \land \; B \subseteq C \; &\Longrightarrow A \subseteq B \\
+  A \subseteq B \; \land \; B \subseteq A \; &\Longrightarrow A = B \\
+  A \subsetneq B \; \land \; B \subsetneq C \; &\Longrightarrow A \subsetneq C\\
+  \end{align}$$
+- **Boolean Algebra**: ![[Boolean Algebra of Set]]
